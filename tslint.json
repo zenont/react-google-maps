@@ -1,5 +1,8 @@
 {
-	"extends": "tslint:recommended",
+	"extends": [
+		"tslint:latest",
+		"tslint-react"
+	],
 	"rulesDirectory": [],
 	"rules": {
 		"indent": [
@@ -21,7 +24,7 @@
 		],
 		"max-line-length": [
 			true,
-			130
+			150
 		],
 		"no-unused-variable": [
 			true
@@ -43,14 +46,18 @@
 			"timeEnd",
 			"trace"
 		],
+		"no-implicit-dependencies": [
+			true,
+			"dev"
+		],
 		"variable-name": [
 			true,
 			"ban-keywords",
 			"check-format",
-			"allow-leading-underscore"
+			"allow-leading-underscore",
+			"allow-pascal-case"
 		],
 		"no-empty-interface": false,
-		"interface-name": false,
 		"object-literal-sort-keys": [
 			false
 		],
@@ -74,20 +81,18 @@
 			}
 		],
 		"arrow-parens": [
-			true,
-			"ban-single-arg-parens"
+			true
 		],
 		"max-classes-per-file": [
 			true,
 			5
 		],
 		"no-duplicate-super": false,
-		"jsRules": {
-			"max-line-length": {
-				"options": [
-					130
-				]
-			}
-		}
+		"jsx-no-lambda": false,
+		"no-submodule-imports": [
+			true,
+			"rxjs"
+		],
+		"jsx-boolean-value": false
 	}
 }

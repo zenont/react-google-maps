@@ -19,7 +19,11 @@ export function initGoogleApi(d: HTMLDocument, options: IGoogleMapApiOptions) {
 	const s = 'script'
 	const id = 'google-maps-api'
 	const gjs = d.getElementsByTagName(s)[0]
-	if (d.getElementById(id)) return
+	if (d.getElementById(id)) {
+		window.isGoogleMapApiInitializing = false
+		window.hasGoogleMapApiInitialized = true
+		return
+	}
 	const js = d.createElement(s); js.id = id
 	const { url, apiKey } = options
 	js.src = `${url}?key=${apiKey}&callback=onGoogleMapsApiLoaded`
