@@ -31,6 +31,16 @@
     "@types/cheerio" "*"
     "@types/react" "*"
 
+"@types/google-maps@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@types/google-maps/-/google-maps-3.2.0.tgz#804a3ae9ac9265b4e0d1508b5b9b894867974f82"
+  dependencies:
+    "@types/googlemaps" "*"
+
+"@types/googlemaps@*":
+  version "3.30.4"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.30.4.tgz#6f3ecd321b89e83b67685588189ece95aecdb4d2"
+
 "@types/html-minifier@*":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@types/html-minifier/-/html-minifier-3.5.0.tgz#eb9f0fa1b68c589606d2af4d5327f3d0b278b59e"

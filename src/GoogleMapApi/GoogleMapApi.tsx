@@ -63,11 +63,15 @@ export class GoogleMapApi extends Component<IGoogleMapApiProps, IGoogleMapApiSta
 	}
 
 	public render() {
-		return null
+		const { children } = this.props
+		return (
+			<div>
+				{children}
+			</div>
+		)
 	}
 
 	private handleOnGoogleMapsApiLoaded() {
-		console.log('handled google !!')
 		this.setState({ initializing: false, initialized: true })
 	}
 }

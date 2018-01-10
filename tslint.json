@@ -83,6 +83,7 @@
 		"arrow-parens": [
 			true
 		],
+		"interface-name": false,
 		"max-classes-per-file": [
 			true,
 			5
