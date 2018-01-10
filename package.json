@@ -13,9 +13,16 @@
   "repository": "https://github.com/zenontrujillo/react-google-maps.git",
   "license": "MIT",
   "devDependencies": {
+    "@types/dotenv": "^4.0.2",
+    "@types/jest": "^22.0.1",
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
+    "dotenv": "^4.0.0",
+    "jest": "^22.0.5",
     "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.1",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.3.3",
     "typescript": "^2.6.2"
   },
   "dependencies": {
