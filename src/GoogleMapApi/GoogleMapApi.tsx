@@ -63,9 +63,11 @@ export class GoogleMapApi extends Component<IGoogleMapApiProps, IGoogleMapApiSta
 	}
 
 	public render() {
+		const { initialized } = this.state
 		const { children } = this.props
+		if (initialized !== true) return null
 		return (
-			<div>
+			<div style={{ width: '100%', height: '100%' }}>
 				{children}
 			</div>
 		)
