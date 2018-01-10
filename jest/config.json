@@ -1,0 +1,13 @@
+{
+    "rootDir": "../",
+    "transform": {
+        "^.+\\.ts?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+        "js",
+        "ts"
+    ],
+    "testMatch": [
+        "**/__tests__/*.spec.(ts)"
+    ]
+}
