@@ -103,6 +103,10 @@ export default (env: any) => {
 			],
 		},
 		plugins: [
+			new EnvironmentPlugin({
+				GOOGLE_MAP_API_KEY: 1,
+				GOOGLE_MAP_API_URL: 1
+			}),
 			new HotModuleReplacementPlugin(),
 			new NamedModulesPlugin(),
 			new NoEmitOnErrorsPlugin(),

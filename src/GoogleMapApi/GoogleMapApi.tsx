@@ -67,6 +67,7 @@ export class GoogleMapApi extends Component<IGoogleMapApiProps, IGoogleMapApiSta
 	}
 
 	private handleOnGoogleMapsApiLoaded() {
+		console.log('handled google !!')
 		this.setState({ initializing: false, initialized: true })
 	}
 }
