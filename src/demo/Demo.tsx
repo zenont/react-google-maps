@@ -31,7 +31,7 @@ export class Demo extends Component<Props<{}>, IDemoState> {
 	}
 
 	private handleOnAddLayers() {
-		this.setState({ layers: payload.features })
+		this.setState({ layers: payload })
 	}
 
 	private handleOnDeleteLayers() {

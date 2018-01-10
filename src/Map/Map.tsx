@@ -61,7 +61,9 @@ export class Map extends Component<IMapProps, IMapState> {
 		if (layers != null) {
 			map.data.addGeoJson(layers)
 		} else {
-			map.data.unbindAll()
+			map.data.forEach((feature) => {
+				map.data.remove(feature)
+			})
 		}
 	}
 }
